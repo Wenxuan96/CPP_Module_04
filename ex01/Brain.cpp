@@ -4,7 +4,6 @@
 Brain::Brain()
 {
 	std::cout << BLUE << "Brain: Default constructor is called." << RESET << std::endl;
-	ideas.fill("");
 }
 
 Brain::~Brain()
@@ -23,7 +22,7 @@ Brain& Brain::operator=(const Brain& other)
 	std::cout << BLUE << "Brain: Copy assignment operator is called." << RESET << std::endl;
 	if (this != &other)
 	{
-		for (size_t i = 0; i < ideas.size(); i++)
+		for (int i = 0; i < 100; i++)
 			ideas[i] = other.ideas[i];
 	}
 	return *this;

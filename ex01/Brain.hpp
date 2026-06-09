@@ -1,11 +1,11 @@
 #pragma once
 #include <iostream>
-#include <array>
+
 
 class Brain
 {
 	private:
-		std::array<std::string, 100> ideas;
+		std::string ideas[100];
 	public:
 		Brain();
 		Brain(const Brain& other);

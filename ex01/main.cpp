@@ -27,4 +27,12 @@ int main()
 		std::cout << i << " ";
 		delete animals[i];
 	}
+
+	std::cout << "\n========== COPY CONSTRUCTOR TEST ==========\n" << std::endl;
+	Animal a((Cat()));
+
+	std::cout << "\n========== COPY ASSIGNMENT OPERATOR TEST ==========\n" << std::endl;
+	Animal b;
+	b = Dog();
+	std::cout << GREEN << "Animal b is: " << b.getType() << RESET << std::endl;
 }

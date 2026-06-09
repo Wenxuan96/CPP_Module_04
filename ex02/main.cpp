@@ -10,7 +10,7 @@ int main()
 	int n = 10;
 	Animal* animals[n];
 	int i = 0;
-	AAnimal a;
+	AAnimal* a;
 
 	while (i < n/2)
 	{
@@ -25,7 +25,6 @@ int main()
 		i++;
 	}
 	
-
 	for (int i = 0; i < n; i++)
 	{
 		std::cout << i << " ";
