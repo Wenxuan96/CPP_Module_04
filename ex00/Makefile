@@ -21,7 +21,7 @@ fclean: clean
 re: fclean all
 
 frun: re
-	@printf "\n========== START TEST ==========\n"
+	@printf "\n========== START TEST ==========\n\n"
 	./$(NAME)
 	@printf "\n========== END TEST ==========\n"
 	@$(MAKE) --no-print-directory fclean > /dev/null

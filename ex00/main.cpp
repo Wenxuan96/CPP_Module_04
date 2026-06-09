@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	std::cout << "\n\n========== Default Subject TEST ==========\n" << std::endl;
+	std::cout << "\n========== Default Subject TEST ==========\n" << std::endl;
 	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
@@ -26,7 +26,7 @@ int main(void)
 	j->makeSound(); //will output the default Animal sound, i.e. '<?>'!
 	delete meta;
 
-	std::cout << "\n\n========== WrongAnimal TEST ==========\n" << std::endl;
+	std::cout << "\n========== WrongAnimal TEST ==========\n" << std::endl;
 	const WrongAnimal* META = new WrongAnimal();
 	const WrongAnimal* I = new WrongCat();
 	std::cout << GREEN << "WrongAnimal type is: " << I->getType() << "." << RESET << std::endl;
