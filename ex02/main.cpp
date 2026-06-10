@@ -10,7 +10,6 @@ int main()
 	int n = 10;
 	Animal* animals[n];
 	int i = 0;
-	AAnimal* a;
 
 	while (i < n/2)
 	{

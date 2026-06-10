@@ -5,17 +5,21 @@ Dog::Dog(): Animal("Dog"), dogBrain(new Brain())
 	std::cout << BLUE << "Dog: Default constructor is called. Created a " << type << " instance." << RESET << std::endl;
 }
 
-Dog::Dog(const Dog& other)
+Dog::Dog(const Dog& other): Animal(other)
 {
 	std::cout << BLUE << "Dog: Copy constructor is called. Created a " << type << " instance." << RESET << std::endl;
-	*this = other;
+	dogBrain = new Brain(*other.dogBrain);
 }
 
 Dog& Dog::operator=(const Dog& other)
 {
 	std::cout << BLUE << "Dog: Copy assignment operator is called. Created a " << type << " instance." << RESET << std::endl;
 	if (this != &other)
-		type = other.type;
+    {
+        Animal::operator=(other);
+        delete dogBrain;     
+        dogBrain = new Brain(*other.dogBrain);
+    }
 	return *this;
 }
 
