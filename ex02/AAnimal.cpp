@@ -29,11 +29,6 @@ AAnimal::~AAnimal()
 	std::cout << BLUE << "AAnimal: Deconstructor is called." << RESET << std::endl;
 }
 
-void AAnimal::makeSound() const
-{
-	std::cout << GREEN << "'<?>'." << RESET << std::endl;
-}
-
 const std::string& AAnimal::getType() const
 {
 	return type;

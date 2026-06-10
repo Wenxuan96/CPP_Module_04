@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 
+
 class Brain
 {
 	private:
@@ -10,4 +11,7 @@ class Brain
 		Brain(const Brain& other);
 		Brain& operator=(const Brain& other);
 		~Brain();
+
+		void setIdea(int index, const std::string& idea);
+		const std::string& getIdea(int index) const;
 };

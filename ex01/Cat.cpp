@@ -38,3 +38,8 @@ const std::string& Cat::getType() const
 {
 	return type;
 }
+
+Brain* Cat::getBrain() const
+{
+    return catBrain;
+}

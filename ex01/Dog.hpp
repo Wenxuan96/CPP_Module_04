@@ -13,4 +13,6 @@ class Dog: public Animal
 		~Dog();
 		virtual void makeSound() const;
 		const std::string& getType() const;
+
+		Brain*	getBrain() const;
 };

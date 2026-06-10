@@ -38,3 +38,8 @@ const std::string& Dog::getType() const
 {
 	return type;
 }
+
+Brain* Dog::getBrain() const
+{
+    return dogBrain;
+}
